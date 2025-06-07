@@ -1,0 +1,15 @@
+# usage-demo.txt
+
+Input (access_logs.txt):
+```
+Accepted connection from 192.168.1.1 at 12:00
+Blocked connection from 203.0.113.5 at 12:01
+Allowed access to 10.0.0.5
+Connection attempt from 172.16.0.2
+```
+
+Output (filtered_logs.txt):
+```
+192.168.1.1
+10.0.0.5
+172.16.0.2
