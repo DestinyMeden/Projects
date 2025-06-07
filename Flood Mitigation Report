@@ -1,0 +1,53 @@
+# 🌐 SYN Flood Mitigation Report
+
+This project explores SYN flood attacks—a common form of Denial-of-Service (DoS)—and outlines detection and mitigation strategies using open-source tools and system configuration.
+
+---
+
+## 🎯 Objective
+To simulate a SYN flood scenario in a lab environment, analyze network behavior during the attack, and implement firewall-based mitigation strategies.
+
+---
+
+## 🧪 Test Environment
+- Ubuntu 22.04 LTS
+- Wireshark
+- hping3 (for simulating SYN flood)
+- iptables
+
+---
+
+## 🛠️ Tools Used
+- **Wireshark** – For packet capture and analysis
+- **hping3** – SYN flood generation
+- **iptables** – Firewall rules for blocking/mitigating attacks
+
+---
+
+## 📁 Files Included
+- `mitigation-report.md` – Full write-up of the test, findings, and mitigation strategies
+- `wireshark-synflood.pcapng` – Packet capture of the simulated attack (optional placeholder)
+- `iptables-rules.txt` – Commands used to defend against SYN floods
+
+---
+
+## 🔍 Key Findings
+- SYN flood leads to rapid consumption of server resources (half-open connections)
+- Legitimate traffic is blocked/delayed during attack
+- Traditional stateful firewalls can be overwhelmed
+
+---
+
+## 🛡️ Mitigation Techniques
+- Enable **SYN cookies** via sysctl
+- Apply **rate-limiting** using iptables:
+  ```bash
+  iptables -A INPUT -p tcp --syn -m limit --limit 1/s --limit-burst 3 -j ACCEPT
+  iptables -A INPUT -p tcp --syn -j DROP
+  ```
+- Use external firewalls/load balancers to absorb floods
+
+---
+
+## 📌 Tags
+`#NetworkSecurity` `#DDoS` `#SYNFlood` `#LinuxFirewall` `#Iptables`
