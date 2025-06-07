@@ -1,0 +1,55 @@
+# ✅ Internal Security Audit Checklist – Botium Toys
+
+This checklist was used to perform a structured internal security audit of Botium Toys' IT infrastructure. Items are grouped into key security categories aligned with best practices.
+
+---
+
+## 1. Access Control
+- [x] All user accounts are unique (no shared credentials)
+- [x] Strong password policy enforced (min length, complexity, expiration)
+- [ ] Multi-Factor Authentication (MFA) is enabled
+- [x] Inactive accounts disabled or removed regularly
+- [ ] Role-based access controls (RBAC) implemented for internal tools
+
+---
+
+## 2. Network Security
+- [ ] Firewall is configured with a deny-all default policy
+- [x] All open ports are documented and reviewed
+- [ ] Intrusion Detection System (IDS) is deployed and monitored
+- [x] Guest Wi-Fi is isolated from production network
+
+---
+
+## 3. Data Protection
+- [x] Sensitive data is encrypted at rest
+- [ ] Full disk encryption is enforced on all company laptops
+- [x] TLS/HTTPS is used for all external-facing applications
+- [ ] Backup data is encrypted and tested monthly
+
+---
+
+## 4. Physical Security
+- [x] Server room is locked and access is restricted
+- [x] Visitor logs are maintained
+- [ ] CCTV coverage is continuous and stored securely
+
+---
+
+## 5. Incident Response
+- [x] Incident response plan exists and is documented
+- [ ] Incident response drills are performed at least once a year
+- [x] Designated incident response team is in place
+
+---
+
+## 6. Policy & Awareness
+- [x] Acceptable use policy is signed by all employees
+- [ ] Security awareness training is conducted annually
+- [ ] Clear documentation exists for IT and security procedures
+
+---
+
+## ✅ Overall Completion: 18/26
+- ✔️ Items Passed: 18
+- ❗ Items Needing Attention: 8
