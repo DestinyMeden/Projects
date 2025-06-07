@@ -1,0 +1,54 @@
+# 📝 Audit Findings Summary – Botium Toys
+
+## 🔍 Overview
+An internal audit was conducted to assess the cybersecurity posture of Botium Toys. The audit used a checklist aligned with ISO/IEC 27001 and industry best practices. This summary highlights the most critical vulnerabilities and offers prioritized recommendations.
+
+---
+
+## 🚨 High-Priority Issues
+
+### 1. **No Multi-Factor Authentication (MFA)**
+- **Impact:** Increases risk of account compromise through phishing or brute-force attacks
+- **Recommendation:** Implement MFA for all admin and remote-access accounts
+
+### 2. **Firewall Default Policy Not Deny-All**
+- **Impact:** May allow unauthorized inbound connections
+- **Recommendation:** Reconfigure firewall to a default-deny policy and explicitly allow only essential services
+
+### 3. **No Intrusion Detection System (IDS)**
+- **Impact:** Attacks or intrusions may go undetected
+- **Recommendation:** Deploy an open-source IDS like Snort or Suricata
+
+### 4. **Unencrypted Backup Data**
+- **Impact:** Breach of backup servers may lead to full data exposure
+- **Recommendation:** Encrypt all backup archives and test decryption regularly
+
+---
+
+## ⚠️ Medium-Priority Issues
+
+### 5. **No Security Awareness Training Program**
+- **Impact:** Staff may fall victim to phishing or social engineering
+- **Recommendation:** Schedule annual mandatory training sessions
+
+### 6. **No Disk Encryption on Company Laptops**
+- **Impact:** Data exposure in case of theft/loss of device
+- **Recommendation:** Enforce full disk encryption via BitLocker or LUKS
+
+### 7. **No CCTV Storage Redundancy**
+- **Impact:** Physical breach evidence could be lost
+- **Recommendation:** Back up CCTV footage to a secure offsite or cloud archive
+
+### 8. **Missing Documentation of IT Procedures**
+- **Impact:** Inconsistent practices and poor incident response
+- **Recommendation:** Formalize and document all IT/security procedures
+
+---
+
+## ✅ Summary
+- **Total Issues Identified:** 9
+- **High-Priority:** 4
+- **Medium-Priority:** 5
+- **Immediate Action Required:** MFA, firewall policy, IDS deployment, backup encryption
+
+> 🛡️ This audit reveals that while many good practices are in place, key foundational gaps must be addressed to improve Botium Toys’ overall security maturity.
